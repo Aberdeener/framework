@@ -81,11 +81,11 @@ interface Registrar
     /**
      * Create a route group with shared attributes.
      *
-     * @param  array  $attributes
+     * @param  array|\Closure  $attributes
      * @param  \Closure|string  $routes
      * @return void
      */
-    public function group(array $attributes, $routes);
+    public function group($attributes, $routes = null);
 
     /**
      * Substitute the route bindings onto the route.
